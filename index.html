@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadhira Lexandrya Putri | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f7fc;
+            color: #25334a;
+        }
+
+        header {
+            background: #101d36;
+            color: white;
+            padding: 22px 9%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #73b7ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #73b7ff;
+        }
+
+        .hero {
+            min-height: 440px;
+            padding: 90px 10%;
+            background: linear-gradient(120deg, #101d36, #244e82);
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero small {
+            color: #83c2ff;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            font-size: clamp(35px, 6vw, 58px);
+            margin: 18px 0;
+            line-height: 1.15;
+        }
+
+        .hero h1 span {
+            color: #73b7ff;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #d5e4f5;
+            max-width: 650px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 13px 25px;
+            background: #73b7ff;
+            color: #101d36;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: auto;
+            padding: 65px 25px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: #17365d;
+            margin-bottom: 25px;
+        }
+
+        .about-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(20, 45, 80, 0.06);
+            line-height: 1.9;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(20, 45, 80, 0.06);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #244e82;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.8;
+            color: #64748b;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #e3efff;
+            color: #244e82;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .contact {
+            background: #eaf2fc;
+            padding: 35px;
+            border-radius: 15px;
+            line-height: 2;
+        }
+
+        .contact a {
+            color: #244e82;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #101d36;
+            color: #d5e4f5;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 75px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">NL.</div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <small>WELCOME TO MY PERSONAL PORTFOLIO</small>
+
+            <h1>
+                Hi, I'm <span>Nadhira<br>Lexandrya Putri.</span>
+            </h1>
+
+            <p>
+                Information Systems Student at Telkom University.
+                Passionate about technology, creativity,
+                digital media, and continuous learning.
+            </p>
+
+            <a href="#about" class="hero-btn">
+                Explore My Portfolio →
+            </a>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-card">
+                <p>
+                    Halo! Nama saya Nadhira Lexandrya Putri,
+                    mahasiswa S1 Sistem Informasi di Telkom University.
+                    Saya memiliki ketertarikan pada teknologi informasi,
+                    pengembangan sistem, content creation, dan dunia digital.
+                    Saya senang mempelajari hal baru, mengembangkan kreativitas,
+                    serta meningkatkan kemampuan melalui berbagai pengalaman.
+                </p>
+            </div>
+        </section>
+
+        <section id="education" style="margin-top: 65px;">
+            <h2 class="section-title">Education</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Telkom University</h3>
+                    <p>S1 Sistem Informasi</p>
+                    <p>Jakarta, Indonesia</p>
+                </div>
+
+                <div class="card">
+                    <h3>Senior High School</h3>
+                    <p>SMAN 7 Kota Bengkulu</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" style="margin-top: 65px;">
+            <h2 class="section-title">My Skills</h2>
+
+            <div class="skill-list">
+                <span class="skill">HTML & CSS</span>
+                <span class="skill">Microsoft Office</span>
+                <span class="skill">Content Creation</span>
+                <span class="skill">Video Editing</span>
+                <span class="skill">Graphic Design</span>
+                <span class="skill">Communication</span>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top: 65px;">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact">
+                <p><strong>Name:</strong> Nadhira Lexandrya Putri</p>
+                <p><strong>University:</strong> Telkom University</p>
+                <p><strong>Email:</strong> Your Email Address</p>
+                <p><strong>Instagram:</strong> Your Instagram Username</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Nadhira Lexandrya Putri.
+            Designed with passion.
+        </p>
+    </footer>
+
+</body>
+</html>
